@@ -23,7 +23,7 @@
           <van-checkbox slot="icon" :name="item.id" />
           <van-card
             :num="item.num"
-            :price="item.price"
+            :price="item.price.toFixed(2)"
             :desc="item.desc"
             :title="item.title"
             :thumb="item.thumb"

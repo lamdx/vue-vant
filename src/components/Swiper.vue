@@ -35,6 +35,8 @@ export default {
     text-align: center;
   }
   img {
+    padding: 3px;
+    border-radius: 8px;
     height: 100%;
   }
   .full {
