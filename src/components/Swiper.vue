@@ -4,7 +4,7 @@
       <!-- 在组件中，使用v-for循环的话，一定要使用 key -->
       <!-- 谁使用此轮播图组件，谁传递 bannerlist -->
       <!-- bannerlist 应该是父组件向子组件传值来设置 -->
-      <van-swipe :autoplay="2000">
+      <van-swipe :autoplay="2000" indicator-color="white">
         <van-swipe-item v-for="item in bannerlist" :key="item.id">
           <img
             v-lazy="item.imgsrc"
@@ -30,7 +30,7 @@ export default {
 </script>
 <style scoped lang="scss">
 .van-swipe {
-  height: 200px;
+  height: 250px;
   .van-swipe-item {
     text-align: center;
   }

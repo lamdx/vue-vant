@@ -106,7 +106,7 @@
       round
       closeable
       position="bottom"
-      :style="{ height: '50%' }"
+      :style="{ height: '40%' }"
     >
       <div class="title">
         <img :src="pic" alt="" />
@@ -263,11 +263,11 @@ export default {
       ],
       show: false, // 弹框
       num: 1, // 购买数量
-      flag: "", // 选择规格
+      flag: "", // 选中的规格
       pic: "",
       price: "",
       desc: "请选择规格属性",
-      specs: [
+      specs: [ // 规格
         {
           id: 1,
           name: "水120ml",
@@ -318,7 +318,7 @@ export default {
     // 查看商品详情 跳转页还没有完成
     view(id) {
       console.log("进入详情id", id);
-      this.$router.push({ path: `/mysearch/goodlist/${id}` });
+      this.$router.push({ path: `/goodsinfo/${id}` });
     }
   },
   components: {

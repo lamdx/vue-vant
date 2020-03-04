@@ -81,6 +81,12 @@ const routes = [
         /* webpackChunkName: "addressedit" */ "../views/member/AddressEdit.vue"
       )
   },
+  {
+    path: "/member/settings",
+    name: "settings",
+    component: () =>
+      import(/* webpackChunkName: "settings" */ "../views/member/Settings.vue")
+  },
   // 登录注册相关路由
   {
     path: "/login",
@@ -105,6 +111,14 @@ const routes = [
     name: "forgetpwd",
     component: () =>
       import(/* webpackChunkName: "forgetpwd" */ "../views/login/ForgetPwd.vue")
+  },
+  // 商品相关
+  {
+    path: "/goodsinfo/:id",
+    props: true,
+    name: "goodsinfo",
+    component: () =>
+      import(/* webpackChunkName: "goodsinfo" */ "../views/goods/GoodsInfo.vue")
   }
 ];
 

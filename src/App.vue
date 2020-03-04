@@ -18,6 +18,9 @@ body,
 #app {
   height: 100%;
 }
+p {
+  margin: 0;
+}
 .app-container {
   overflow-x: hidden;
   height: 100%;
